@@ -1,0 +1,24 @@
+.snake-wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.snake-grid
+    width: 100%
+    border: 1px solid gray
+    background-color: #e8f5e9
+    margin-bottom: 32px
+    
+.snake-cell
+    border: 1px solid gray
+    &::before
+        content: ''
+        display: block
+        width: 100%
+        padding-top: 100%
+    &--snake
+        background-color: #4caf50
+    &--snake-head
+        background-color: #388e3c
+    &--food
+        background-color: #5d4037
